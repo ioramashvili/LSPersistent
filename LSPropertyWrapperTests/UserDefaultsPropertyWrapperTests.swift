@@ -1,6 +1,6 @@
 import XCTest
 import LSPropertyWrapper
-import LSPersistent
+import LSPersistentKit
 
 class UserDefaultsPropertyWrapperTests: XCTestCase {
     override func setUp() {

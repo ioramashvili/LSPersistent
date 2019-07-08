@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "LSPersistentKit",
+        "repositoryURL": "https://github.com/ioramashvili/LSPersistentKit.git",
+        "state": {
+          "branch": null,
+          "revision": "728d744ddb0518ac02e7cd321895392e1ca51536",
+          "version": "0.0.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4311F09222D339A10072A82A /* LSPersistentKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4311F09122D339A10072A82A /* LSPersistentKit */; };
 		43815A2422D0B0B900BE2061 /* KeychainContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43815A2322D0B0B900BE2061 /* KeychainContainer.swift */; };
 		43F4C8C322CFD2CD00B57832 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F4C8C222CFD2CD00B57832 /* AppDelegate.swift */; };
 		43F4C8C522CFD2CD00B57832 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F4C8C422CFD2CD00B57832 /* SceneDelegate.swift */; };
@@ -14,7 +15,6 @@
 		43F4C8CA22CFD2CD00B57832 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43F4C8C822CFD2CD00B57832 /* Main.storyboard */; };
 		43F4C8CC22CFD2CF00B57832 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43F4C8CB22CFD2CF00B57832 /* Assets.xcassets */; };
 		43F4C8CF22CFD2CF00B57832 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43F4C8CD22CFD2CF00B57832 /* LaunchScreen.storyboard */; };
-		43F4C8D922CFD42E00B57832 /* LSPersistent in Frameworks */ = {isa = PBXBuildFile; productRef = 43F4C8D822CFD42E00B57832 /* LSPersistent */; };
 		43F4C8E222CFD6CB00B57832 /* KeyChainPropertyWrapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F4C8E122CFD6CB00B57832 /* KeyChainPropertyWrapperTests.swift */; };
 		43F4C8EA22CFE00B00B57832 /* UserDefaultsPropertyWrapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F4C8E922CFE00B00B57832 /* UserDefaultsPropertyWrapperTests.swift */; };
 /* End PBXBuildFile section */
@@ -39,7 +39,6 @@
 		43F4C8CB22CFD2CF00B57832 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43F4C8CE22CFD2CF00B57832 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43F4C8D022CFD2CF00B57832 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		43F4C8D622CFD3A500B57832 /* LSPersistent */ = {isa = PBXFileReference; lastKnownFileType = folder; path = LSPersistent; sourceTree = "<group>"; };
 		43F4C8DA22CFD4AF00B57832 /* LSPropertyWrapper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LSPropertyWrapper.entitlements; sourceTree = "<group>"; };
 		43F4C8DF22CFD6CB00B57832 /* LSPropertyWrapperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LSPropertyWrapperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		43F4C8E122CFD6CB00B57832 /* KeyChainPropertyWrapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainPropertyWrapperTests.swift; sourceTree = "<group>"; };
@@ -52,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43F4C8D922CFD42E00B57832 /* LSPersistent in Frameworks */,
+				4311F09222D339A10072A82A /* LSPersistentKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,7 +68,6 @@
 		43F4C8B622CFD2CD00B57832 = {
 			isa = PBXGroup;
 			children = (
-				43F4C8D622CFD3A500B57832 /* LSPersistent */,
 				43F4C8C122CFD2CD00B57832 /* LSPropertyWrapper */,
 				43F4C8E022CFD6CB00B57832 /* LSPropertyWrapperTests */,
 				43F4C8C022CFD2CD00B57832 /* Products */,
@@ -136,7 +134,7 @@
 			);
 			name = LSPropertyWrapper;
 			packageProductDependencies = (
-				43F4C8D822CFD42E00B57832 /* LSPersistent */,
+				4311F09122D339A10072A82A /* LSPersistentKit */,
 			);
 			productName = LSPropertyWrapper;
 			productReference = 43F4C8BF22CFD2CD00B57832 /* LSPropertyWrapper.app */;
@@ -188,6 +186,9 @@
 				Base,
 			);
 			mainGroup = 43F4C8B622CFD2CD00B57832;
+			packageReferences = (
+				4311F09022D339A10072A82A /* XCRemoteSwiftPackageReference "LSPersistentKit" */,
+			);
 			productRefGroup = 43F4C8C022CFD2CD00B57832 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -495,10 +496,22 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		4311F09022D339A10072A82A /* XCRemoteSwiftPackageReference "LSPersistentKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ioramashvili/LSPersistentKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
-		43F4C8D822CFD42E00B57832 /* LSPersistent */ = {
+		4311F09122D339A10072A82A /* LSPersistentKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = LSPersistent;
+			package = 4311F09022D339A10072A82A /* XCRemoteSwiftPackageReference "LSPersistentKit" */;
+			productName = LSPersistentKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

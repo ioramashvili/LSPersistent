@@ -1,4 +1,4 @@
-import LSPersistent
+import LSPersistentKit
 
 public class KeychainContainer {
     public static let defaultKeychainGroup = "BJ8RU8C34V.com.leavingstone.LSPropertyWrapper"
